@@ -26,7 +26,7 @@ def self.find_by_name(name)
   self.all.find {|song| song.name == name}
 end
 def self.find_or_create_by_name(name)
-  self.class.create_by_name if !self.class.find_by_name
+  self.class.create_by_name(name) if !self.class.find_by_name(name)
 end
 
   def self.all
