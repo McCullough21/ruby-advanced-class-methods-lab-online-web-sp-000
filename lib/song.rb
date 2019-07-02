@@ -7,7 +7,6 @@ def self.create(name)
   song = self.new
   song = name
   save
-  return song
 end
 
 # def self.new_by_name(name)
