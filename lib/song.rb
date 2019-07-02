@@ -5,7 +5,6 @@ class Song
 
 def self.create(name)
   name = self.new
-  @name = name
   @@all << name
 end
 
