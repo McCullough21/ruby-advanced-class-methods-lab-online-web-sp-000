@@ -4,9 +4,9 @@ class Song
 
 
 def self.create(name)
-  name = self.new
-  @name = name
-  @@all << name
+  song = self.new
+  song = name
+  @@all << song
 end
 
 # def self.new_by_name(name)
