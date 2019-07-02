@@ -33,10 +33,10 @@ def self.alphabetical
   @@all.sort_by{|song| song.name}
 end
 
-def self.new_from_filename(artist, name)
+def self.new_from_filename(name)
   song = self.new
-  song.name = name
-  artist_name = artist
+  song.name = name.split(" - ")[1]
+  artist_name = name.split(" - ")[0]
   @@all << song
 end
 
