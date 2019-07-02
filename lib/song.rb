@@ -32,6 +32,15 @@ end
 def self.alphabetical
   @@all.sort_by{|song| song.name}
 end
+
+def self.new_from_filename(artist, name)
+  song = self.new
+  song.name = name
+  artist_name = artist
+  @@all << song
+end
+
+
   def self.all
     @@all
   end
