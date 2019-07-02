@@ -3,7 +3,7 @@ class Song
   @@all = []
 
 
-def self.create
+def self.create(name)
   song = self.new
   song_name = name
   @@all << name
